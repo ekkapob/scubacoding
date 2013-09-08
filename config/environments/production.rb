@@ -77,4 +77,7 @@ Scuba::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # add app/assets/fonts to the asset path
+  config.assets.paths << Rails.root.join("app", "assets", "fonts")
 end
